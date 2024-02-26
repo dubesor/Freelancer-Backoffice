@@ -23,18 +23,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Zeigt Hochscrollknopf wenn man 1000px runtergescrollt hat
+// Zeigt Hochscrollknopf wenn man 300px runtergescrollt hat
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.getElementById("backToTop").style.display = "block";
     } else {
         document.getElementById("backToTop").style.display = "none";
     }
 }
 
-// Schickeres Hochscrollen
+// Hochscroll-Funktion
 function scrollToTop() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
