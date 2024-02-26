@@ -1,0 +1,193 @@
+
+/* Reset default margin and padding */
+html, body {
+	font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+#container {
+	    width: 100%;
+    margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+header {
+    background: #003366; /* Dark blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    background: #f2f2f2; /* Light grey */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+	    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #003366; /* Dark blue */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+	    padding: 10px;
+}
+
+/* Hervorhebung für Menüelemente beim Darüberfahren */
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #ddd; /* Farbe für das Hover */
+    color: black;
+}
+	
+	/* Hervorhebung für das aktive Menüelement */
+nav ul li a.active {
+    background-color: #ddd; /* Hintergrundfarbe für das aktive Element */
+    color: black;
+}
+
+nav ul li a.active:hover {
+    background-color: #ddd; /* Hintergrundfarbe bleibt beim Hover über das aktive Element */
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #000000; /* Change color on hover */
+}
+
+
+
+main {
+    margin: 15px 0;
+	padding-left: 10%;
+	padding-right: 5%;
+}
+
+footer {
+    background: #003366; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Adjusted to full width */
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+	gap: 0px;
+}
+
+.profile-text {
+    width: 50%; /* Adjust based on your layout */
+}
+
+	
+.profile-image {
+	    max-width: 100%;
+    height: auto;
+    width: 100%; /* Adjust based on your layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.timeline-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timeline-table th, .timeline-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.timeline-table th {
+    background-color: #f2f2f2;
+}
+
+.timeline-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* all following css is mobile display bug adressing */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.hamburger-menu {
+    display: none; /* Hide by default */
+    cursor: pointer;
+	padding: 10px;
+	font-size: 20px;
+    /* Additional styling as needed */
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+    nav ul {
+        display: none; /* Hide the menu items initially on smaller screens */
+        width: 100%; /* Ensure full width */
+    }
+    nav ul.show {
+        display: flex; /* Use flex to display items when menu is toggled */
+        flex-direction: column; /* Ensure items are displayed vertically */
+        align-items: center; /* Center items */
+    }
+    nav ul li {
+    text-align: left; /* Text align left for list items */
+    width: 100%; /* Full width for list items */
+}
+    nav ul li a {
+        display: block; /* Ensure links take up full width of list item */
+        padding: 10px; /* Add padding for tap targets */
+        width: 100%; /* Full width links for easier tapping */
+    }
+}
+
+#backToTop {
+    padding: 10px;
+    position: fixed;
+    bottom: 8px;
+    right: 20px;
+    display: none; /* Hide by default */
+}
