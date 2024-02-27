@@ -71,7 +71,9 @@ nav ul li a:hover {
     color: #000000; /* Change color on hover */
 }
 
-
+.list-angebot {
+    margin-bottom: 5px;
+}
 
 main {
     margin: 15px 0;
