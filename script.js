@@ -39,3 +39,13 @@ function scrollToTop() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+// Email Anti-Spam script
+    var user = 'office';
+    var domain = 'freelancer-backoffice.de';
+    var elem = document.createElement('a');
+    elem.href = 'mailto:' + user + '@' + domain;
+    elem.innerText = user + '@' + domain;
+    document.body.appendChild(elem);
+        }
+    });
+});

@@ -294,4 +294,11 @@ footer a:hover {
         /* Define a class for the list items */
         .contact-info {
             list-style-type: none; /* Remove default list style */
-        }		
+        }	
+
+/* Mail protect */
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+		
