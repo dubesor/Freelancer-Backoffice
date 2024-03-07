@@ -63,7 +63,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #003366; /* Dark blue */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    transition: color 0.3s; /* Smooth Hover-Transition */
 	    padding: 10px;
 }
 
@@ -85,7 +85,7 @@ nav ul li a.active:hover {
 }
 
 nav ul li a:hover {
-    color: #000000; /* Change color on hover */
+    color: #000000; /* Hover Farbwechsel */
 }
 
 .list-angebot {
@@ -105,7 +105,7 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0;
-    width: 100%; /* Adjusted to full width */
+    width: 100%; /* Volle Breite */
 }
 
 footer a {
@@ -125,14 +125,14 @@ footer a:hover {
 }
 
 .profile-text {
-    width: 50%; /* Adjust based on your layout */
+    width: 50%; /* Kann justiert werden */
 }
 
 	
 .profile-image {
 	    max-width: 100%;
     max-height: 350px;
-    width: 100%; /* Adjust based on your layout */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,6 +213,8 @@ footer a:hover {
     text-align: right;
     padding-right: 5px;
     color: #bbb;
+    width: 80px; /* Muss Breite des längsten Datums haben */
+    min-width: 80px; /* wie oben */
 }
 
 .ico {
@@ -228,7 +230,7 @@ footer a:hover {
     margin-left: 10px;
 }
 
-/* all following css is mobile display bug adressing */
+/* Mobile relevante fixes */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -274,26 +276,26 @@ footer a:hover {
     position: fixed;
     bottom: 8px;
     right: 20px;
-    display: none; /* Hide by default */
+    display: none; /* nicht sichtbar by Default */
 }
 
 		.contacticon {
-            width: 15px; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
+            width: 15px;
+            height: auto; /* Aspektratio */
         }
 		
           /* Define a class for the labels */
         .contactlabel {
-            width: 45px; /* Set the width of the labels (adjust as needed) */
-            display: inline-block; /* Make the labels inline-block to set their width */
-            text-align: left; /* Align the text of the labels to the left */
-            margin-right: 5px; /* Add some space between the label and the text */
+            width: 45px;
+            display: inline-block;
+            text-align: left;
+            margin-right: 5px; /* Platz zwischen Label & Text */
         }
  
 
         /* Define a class for the list items */
         .contact-info {
-            list-style-type: none; /* Remove default list style */
+            list-style-type: none; /* Defaul Liststil entfernen */
         }	
 
 /* Mail protect */
