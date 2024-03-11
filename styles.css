@@ -254,6 +254,7 @@ footer a:hover {
 
 .hamburger-menu {
     display: none; /* Hide by default */
+	background: #f2f2f2;
     cursor: pointer;
 	padding: 10px;
 	font-size: 20px;
@@ -263,6 +264,7 @@ footer a:hover {
 @media screen and (max-width: 768px) {
     .hamburger-menu {
         display: block; /* Show hamburger menu on smaller screens */
+		    font-size: 28px; /* Adjust the size to make it bigger */
     }
 
     nav ul {
