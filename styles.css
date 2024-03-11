@@ -36,14 +36,27 @@ html, body {
 header {
     background: #003366; /* Dark blue */
     color: white;
-    padding: 20px;
+    padding: 20px; /* Reduced on smaller screens within the media query below */
     text-align: center;
 }
 
 header img {
-    width: auto;
-    height: 140px;
+    width: auto; /* Scales image width based on its height */
+    height: 140px; /* Adjusted on smaller screens within the media query below */
+    max-width: 100%; /* Prevents the image from being wider than its container */
 }
+
+/* Media query for screens that are 768px wide or less */
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduced padding */
+    }
+
+    header img {
+        height: 80px; /* Smaller logo height */
+    }
+}
+
 
 nav {
     background: #f2f2f2; /* Light grey */
@@ -104,10 +117,10 @@ footer {
     background: #003366; /* Dark blue */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 10px; /* Adjusted on smaller screens within the media query below */
     position: fixed;
     bottom: 0;
-    width: 100%; /* Volle Breite */
+    width: 100%; /* Full width */
 }
 
 footer a {
@@ -118,6 +131,19 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Media query for screens that are 768px wide or less */
+@media (max-width: 768px) {
+    footer {
+        padding: 5px 10px; /* Reduced vertical padding */
+        font-size: 0.8em; /* Smaller font size for space efficiency */
+    }
+
+    footer a {
+        font-size: 0.8em; /* Ensure anchor tags within the footer match the reduced font size */
+    }
+}
+
 
 .profile-section {
     display: flex;
