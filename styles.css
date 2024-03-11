@@ -20,11 +20,13 @@ html, body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 @media (min-width: 992px) {
     .container {
         width: 970px;
      }
 }
+	 
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -127,7 +129,11 @@ footer a:hover {
 .profile-text {
     width: 50%; /* Kann justiert werden */
 }
-
+@media (max-width: 600px) {
+	.profile-text {
+	width: auto;
+	}  
+}
 	
 .profile-image {
 	    max-width: 100%;
@@ -171,6 +177,7 @@ footer a:hover {
   .timeline::after {
     left: 31px;
   }
+}
 
   .container {
     width: 100%;
@@ -184,6 +191,12 @@ footer a:hover {
 
   .right {
     left: 0%;
+	}
+	
+@media (max-width: 600px) {
+  .container {
+    padding: 10px 0px; /* Reduced padding on smaller screens */
+    width: 100%; /* Full width on smaller screens */
   }
 }
 
@@ -251,10 +264,12 @@ footer a:hover {
     .hamburger-menu {
         display: block; /* Show hamburger menu on smaller screens */
     }
+
     nav ul {
         display: none; /* Hide the menu items initially on smaller screens */
         width: 100%; /* Ensure full width */
     }
+
     nav ul.show {
         display: flex; /* Use flex to display items when menu is toggled */
         flex-direction: column; /* Ensure items are displayed vertically */
@@ -270,6 +285,7 @@ footer a:hover {
         width: 100%; /* Full width links for easier tapping */
     }
 }
+
 
 #backToTop {
     padding: 10px;
