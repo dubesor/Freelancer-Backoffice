@@ -347,4 +347,31 @@ footer a:hover {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
-		
+
+/* Responsive design for contact items on mobile */
+@media (max-width: 768px) {
+    .contactlabel,
+    .contact-info li {
+        display: block; /* Stack label and content on separate lines */
+        text-align: left; 
+    }
+    .contacticon {
+        display: inline-block; /* Keep the icon inline with text */
+        vertical-align: middle;
+        margin-right: 5px; /* Maintain spacing between icon and label */
+    }
+    .contactlabel {
+        display: inline-block; 
+        margin-right: 0; /
+        vertical-align: middle; /
+    }
+    /* Ensure that the combination of icon and label does not exceed 100% width */
+    .contact-info li {
+        white-space: nowrap; /* Prevent wrapping within list item */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis for text that doesn't fit */
+    }
+	.contact-info {
+		padding-left:15px;
+	}	
+}
