@@ -55,6 +55,9 @@ header img {
     header img {
         height: 80px; /* Smaller logo height */
     }
+    header h1 {
+        font-size: 4.7vw; /* Reduced font size for h1 */
+    }
 }
 
 
@@ -136,12 +139,13 @@ footer a:hover {
 @media (max-width: 768px) {
     footer {
         padding: 5px 10px; /* Reduced vertical padding */
-        font-size: 0.8em; /* Smaller font size for space efficiency */
+        font-size: 0.75em; /* Smaller font size for space efficiency */
     }
-
+	/* removed due to font difference in footer text
     footer a {
-        font-size: 0.8em; /* Ensure anchor tags within the footer match the reduced font size */
+        font-size: 0.8em; Ensure anchor tags within the footer match the reduced font size 
     }
+	*/
 }
 
 
