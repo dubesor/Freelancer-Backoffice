@@ -347,6 +347,7 @@ footer a:hover {
 .reverse {
   unicode-bidi: bidi-override;
   direction: rtl;
+  white-space: nowrap;
 }
 
 /* Responsive design for contact items on mobile */
