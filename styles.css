@@ -141,11 +141,11 @@ footer a:hover {
         padding: 5px 10px; /* Reduced vertical padding */
         font-size: 0.75em; /* Smaller font size for space efficiency */
     }
-	/* removed due to font difference in footer text
+	
     footer a {
         font-size: 0.8em; Ensure anchor tags within the footer match the reduced font size 
     }
-	*/
+	
 }
 
 
